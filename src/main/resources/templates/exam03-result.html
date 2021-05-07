@@ -1,0 +1,16 @@
+ <!DOCTYPE html>
+<html lang="ja"> 
+<head>
+<meta charset="UTF-8">
+<title>タイトル</title>
+</head>
+<body>
+<h3>合計金額</h3>
+■税抜き価格<br>
+<span th:text="${#numbers.formatInteger(application.sum1, 2, 'COMMA')}">--</span>円<br>
+■税込み価格<br>
+<span th:text="${#numbers.formatInteger(application.sum2, 2, 'COMMA')}">--</span>円<br>
+</body>
+</html>
+
+
